@@ -5,14 +5,6 @@ from pybricks.robotics import DriveBase
 from pybricks.tools import wait, StopWatch
 
 hub = PrimeHub()
-
-from pybricks.hubs import PrimeHub
-from pybricks.pupdevices import Motor, ColorSensor
-from pybricks.parameters import Button, Color, Direction, Port, Side, Stop
-from pybricks.robotics import DriveBase
-from pybricks.tools import wait, StopWatch, run_task, multitask
-
-hub = PrimeHub()
 #Initialisate the robot 
 # Step 1 - Initialize the drive base 
 # Step 2 - Initialize the front and back motors 

@@ -46,29 +46,41 @@ left_sensor = ColorSensor(Port.E)
 drive_base.settings(straight_speed=300,straight_acceleration=800)
 drive_base.straight(315)
 drive_base.turn(-38)
-drive_base.straight(35)
-front_motor.run_angle(500,-420)
+drive_base.straight(45)
+front_motor.run_angle(500,-470)
 
-drive_base.straight(-237)
+drive_base.straight(-247)
 # moving towards the sound mixer
-drive_base.turn(70) 
+drive_base.turn(73) 
 drive_base.settings(straight_speed=211,straight_acceleration=800)
-drive_base.straight(210)
-front_motor.run_angle(100,120)
-drive_base.straight(40)
+drive_base.straight(220)
 
+
+drive_base.settings(straight_speed=100,straight_acceleration=100)
+#mimic the action of pushing up, moving forward - do this two times to lift
+#the sound mixer
+front_motor.run_angle(100,200)
+drive_base.straight(15) # reducing this a bit from 15 to 10 
 front_motor.run_angle(100,120)
-front_motor.run_angle(800,-225)
-drive_base.straight(-60)
-drive_base.turn(93)
-front_motor.run_angle(400,246)
- 
-drive_base.straight(275) ## INCREASE FROM 240 TO 260 
+#drive_base.straight(10)
+
+#Now slowly turn the sound mixer so that the middle control can stay 
+drive_base.settings(turn_rate=80,turn_acceleration=150)
+drive_base.turn(16)
+wait(400) 
+
+drive_base.turn(75)
+#front_motor.run_angle(400,246)
+drive_base.settings(straight_speed=300,straight_acceleration=800)
+
+drive_base.straight(300) ## INCREASE FROM 240 TO 260 
 front_motor.run_angle(400,-400)
+drive_base.settings(straight_speed=150,straight_acceleration=400)
 drive_base.straight(-180)
-front_motor.run_angle(400,260)
-drive_base.turn(-87)
-drive_base.straight(-360)
+front_motor.run_angle(400,460)
+drive_base.settings(straight_speed=400,straight_acceleration=1000)
 
+drive_base.turn(-87)
+drive_base.straight(-400)
 
 

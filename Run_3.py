@@ -5,14 +5,6 @@ from pybricks.robotics import DriveBase
 from pybricks.tools import wait, StopWatch
 
 hub = PrimeHub()
-
-from pybricks.hubs import PrimeHub
-from pybricks.pupdevices import Motor, ColorSensor
-from pybricks.parameters import Button, Color, Direction, Port, Side, Stop
-from pybricks.robotics import DriveBase
-from pybricks.tools import wait, StopWatch, run_task, multitask
-
-hub = PrimeHub()
 #Initialisate the robot 
 # Step 1 - Initialize the drive base 
 # Step 2 - Initialize the front and back motors 
@@ -56,15 +48,16 @@ drive_base.turn(-59)
 drive_base.straight(140)  
 drive_base.turn(52)
 drive_base.straight(260)
-drive_base.turn(-79)
-drive_base.straight(294)
-drive_base.turn(-69)
-drive_base.straight(300)
-drive_base.turn(-45)
-drive_base.straight(685)
-drive_base.turn(90)
-drive_base.straight(34)
+#
+#drive_base.turn(-79)
+#drive_base.straight(294)
+#drive_base.turn(-69)
+#drive_base.straight(300)
+#drive_base.turn(-45)
+#drive_base.straight(685)
+#drive_base.turn(90)
+#drive_base.straight(34)
 #drive_base.turn(-21)
-front_motor.run_angle(400,-769)
-wait(200)
-front_motor.run_angle(600,310)
+#front_motor.run_angle(400,-769)
+#wait(200)
+#front_motor.run_angle(600,310)
